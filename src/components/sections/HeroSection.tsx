@@ -56,6 +56,7 @@ export default function HeroSection() {
 
         {/* Name - letter by letter */}
         <div
+          className="flex flex-col md:block"
           style={{
             fontSize: "clamp(2.5rem, 8vw, 8rem)",
             letterSpacing: "0.08em",
@@ -65,20 +66,53 @@ export default function HeroSection() {
           }}
           aria-label={name}
         >
-          {name.split("").map((char, i) => (
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 1.4 + i * 0.04,
-                duration: 0.4,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              style={{ display: "inline-block" }}
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
+          {name.split(" ").map((word, wordIndex, words) => (
+            <span key={wordIndex} className="inline-block">
+              {word.split("").map((char, charIndex) => {
+                const previousCharsCount = words
+                  .slice(0, wordIndex)
+                  .reduce((acc, w) => acc + w.length, 0);
+                const globalIndex = previousCharsCount + wordIndex + charIndex;
+
+                return (
+                  <motion.span
+                    key={`${wordIndex}-${charIndex}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay: 1.4 + globalIndex * 0.04,
+                      duration: 0.4,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    style={{ display: "inline-block" }}
+                  >
+                    {char}
+                  </motion.span>
+                );
+              })}
+              {wordIndex < words.length - 1 && (
+                <span className="hidden md:inline-block">
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay:
+                        1.4 +
+                        (words
+                          .slice(0, wordIndex + 1)
+                          .reduce((acc, w) => acc + w.length, 0) +
+                          wordIndex) *
+                          0.04,
+                      duration: 0.4,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    style={{ display: "inline-block" }}
+                  >
+                    &nbsp;
+                  </motion.span>
+                </span>
+              )}
+            </span>
           ))}
         </div>
 
