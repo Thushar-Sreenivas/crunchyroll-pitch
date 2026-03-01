@@ -237,6 +237,76 @@ h1, h2, h3,
   color: var(--cr-taupe);
 }
 
+/* Audio toggle */
+.audio-toggle {
+  position: fixed;
+  left: clamp(16px, 3vw, 40px);
+  bottom: clamp(16px, 3vw, 40px);
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.audio-toggle__tooltip {
+  max-width: 220px;
+  padding: 10px 14px;
+  background: rgba(13, 13, 13, 0.92);
+  border: 1px solid var(--cr-border);
+  color: var(--cr-taupe);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14px);
+}
+
+.audio-toggle__button {
+  width: 68px;
+  height: 68px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(13, 13, 13, 0.88);
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition:
+    color 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease,
+    transform 200ms ease,
+    box-shadow 200ms ease;
+  backdrop-filter: blur(14px);
+}
+
+.audio-toggle__button:hover {
+  color: var(--cr-taupe);
+  border-color: rgba(255, 255, 255, 0.24);
+  transform: translateY(-2px);
+}
+
+.audio-toggle__button--active {
+  color: var(--cr-orange);
+  border-color: rgba(244, 117, 33, 0.55);
+  background: rgba(244, 117, 33, 0.08);
+  box-shadow: 0 0 24px rgba(244, 117, 33, 0.18);
+}
+
+.audio-toggle__icon {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.audio-toggle__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 @keyframes dot-pulse {
   0%, 100% { opacity: 0; transform: scale(1); }
   50% { opacity: 0.3; transform: scale(1.5); }
@@ -448,6 +518,23 @@ h1, h2, h3,
     transform: translateX(-50%);
     flex-direction: row;
     gap: 12px;
+  }
+
+  .audio-toggle {
+    left: 16px;
+    bottom: 72px;
+    gap: 10px;
+  }
+
+  .audio-toggle__button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .audio-toggle__tooltip {
+    max-width: min(220px, calc(100vw - 32px));
+    font-size: 0.625rem;
+    letter-spacing: 0.12em;
   }
 
   .episode-nav__dot:hover::after {

@@ -8,12 +8,14 @@ import FooterSection from "@/components/sections/FooterSection";
 import SceneTransition from "@/components/ui/SceneTransition";
 import EpisodeNav from "@/components/ui/EpisodeNav";
 import GrainOverlay from "@/components/ui/GrainOverlay";
+import AudioToggle from "@/components/ui/AudioToggle";
 
 export default function Home() {
   return (
     <>
       <GrainOverlay />
       <EpisodeNav />
+      <AudioToggle />
 
       <main>
         <HeroSection />
