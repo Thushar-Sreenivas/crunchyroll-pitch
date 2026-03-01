@@ -550,6 +550,10 @@ h3,
     letter-spacing: 0.12em;
   }
 
+  .about-section__header {
+    padding-top: 36px;
+  }
+
   .episode-nav__dot:hover::after {
     display: none;
   }

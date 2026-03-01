@@ -18,6 +18,7 @@ export default function WhyMeSection() {
       <SpeedLines />
 
       <div
+        className="why-me-section__content"
         style={{
           maxWidth: 720,
           width: "100%",

@@ -26,6 +26,7 @@ export default function AboutSection() {
       >
         {/* h2 + divider — same as EP.03 / EP.04 */}
         <motion.div
+          className="about-section__header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
