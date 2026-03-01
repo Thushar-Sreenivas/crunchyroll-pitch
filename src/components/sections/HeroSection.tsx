@@ -5,6 +5,7 @@ import KanjiWatermark from "@/components/ui/KanjiWatermark";
 
 export default function HeroSection() {
   const name = "THUSHAR SREENIVAS";
+  const words = name.split(" ");
 
   return (
     <section
@@ -56,9 +57,9 @@ export default function HeroSection() {
 
         {/* Name - letter by letter */}
         <div
-          className="flex flex-col md:block"
+          className="block md:whitespace-nowrap"
           style={{
-            fontSize: "clamp(2.5rem, 8vw, 8rem)",
+            fontSize: "clamp(2rem, 6vw, 6rem)",
             letterSpacing: "0.08em",
             lineHeight: 1,
             textTransform: "uppercase",
@@ -66,7 +67,7 @@ export default function HeroSection() {
           }}
           aria-label={name}
         >
-          {name.split(" ").map((word, wordIndex, words) => (
+          {words.map((word, wordIndex) => (
             <span key={wordIndex} className="inline-block">
               {word.split("").map((char, charIndex) => {
                 const previousCharsCount = words
@@ -91,26 +92,29 @@ export default function HeroSection() {
                 );
               })}
               {wordIndex < words.length - 1 && (
-                <span className="hidden md:inline-block">
-                  <motion.span
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      delay:
-                        1.4 +
-                        (words
-                          .slice(0, wordIndex + 1)
-                          .reduce((acc, w) => acc + w.length, 0) +
-                          wordIndex) *
-                          0.04,
-                      duration: 0.4,
-                      ease: [0.16, 1, 0.3, 1],
-                    }}
-                    style={{ display: "inline-block" }}
-                  >
-                    &nbsp;
-                  </motion.span>
-                </span>
+                <>
+                  <span className="hidden md:inline-block">
+                    <motion.span
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay:
+                          1.4 +
+                          (words
+                            .slice(0, wordIndex + 1)
+                            .reduce((acc, w) => acc + w.length, 0) +
+                            wordIndex) *
+                            0.04,
+                        duration: 0.4,
+                        ease: [0.16, 1, 0.3, 1],
+                      }}
+                      style={{ display: "inline-block" }}
+                    >
+                      &nbsp;
+                    </motion.span>
+                  </span>
+                  <br className="md:hidden" />
+                </>
               )}
             </span>
           ))}
