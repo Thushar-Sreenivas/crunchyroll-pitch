@@ -41,45 +41,18 @@ export const EPISODES = [
   },
 ] as const;
 
-export const ABOUT_PANELS = [
-  {
-    large: false,
-    highlight: "6",
-    highlightLabel: "YEARS",
-    text: "of building across frontend, backend, and infrastructure",
-  },
-  {
-    large: true,
-    highlight: null,
-    highlightLabel: null,
-    text: "I've spent six years gravitating toward problems that sit between disciplines — the kind where you need to understand how the frontend, the backend, and the infrastructure all talk to each other before you can solve anything.",
-  },
-  {
-    large: true,
-    highlight: null,
-    highlightLabel: null,
-    text: "At Pencil (trypencil.com), a generative AI marketing platform, I architected their canvas editor and led the frontend engineering team.",
-    isAction: true,
-  },
-  {
-    large: false,
-    highlight: null,
-    highlightLabel: null,
-    text: "Video players in React Native, backend services in Golang, and CI/CD systems.",
-  },
-  {
-    large: false,
-    highlight: null,
-    highlightLabel: null,
-    text: "AI agent workflows where product teams define context and agents generate pull requests for engineers to review.",
-  },
-  {
-    large: true,
-    highlight: null,
-    highlightLabel: null,
-    text: "When a problem doesn't have a clear owner, I tend to be the one who picks it up.",
-  },
+export const ABOUT_STATS = [
+  { value: "6", label: "Years" },
+  { value: "3", label: "Stacks" },
+  { value: "∞", label: "Curiosity" },
 ];
+
+export const ABOUT_NARRATIVE = {
+  lead: "I genuinely enjoy building software across the stack. I’m curious, and I like solving problems and making things better than I found them.",
+  body: "Over the past six years, I’ve worked across frontend, backend, and infrastructure. At Pencil, I architected a Figma-like canvas editor from scratch and led the frontend team. Before that, I shipped React Native video players, Golang services, and CI/CD pipelines. Most recently, I’ve been building AI-driven workflows that generate engineer-ready pull requests from product context.",
+  closing:
+    "When a problem doesn't have a clear owner, I tend to be the one who picks it up.",
+};
 
 export const STATS = [
   {
