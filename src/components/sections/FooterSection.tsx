@@ -158,9 +158,7 @@ export default function FooterSection() {
             lineHeight: 1.6,
           }}
         >
-          Built with Next.js + Framer Motion
-          <br />
-          Designed as a prototype. Because that&apos;s what I do.
+          Built with Claude, Designed as a prototype
         </motion.p>
 
         {/* Warm regards */}
