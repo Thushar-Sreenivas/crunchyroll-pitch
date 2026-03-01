@@ -103,7 +103,12 @@ export default function FooterSection() {
             justifyContent: "center",
           }}
         >
-          <a href="mailto:thusharsreenivas@gmail.com" className="cta-primary">
+          <a
+            href="https://drive.google.com/drive/folders/1onaYVHsQzoDUPZB1Z-Jo9jOnAmYHYUhN?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-primary"
+          >
             Resume
           </a>
           <a

@@ -23,14 +23,38 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Thushar Sreenivas | Cover Letter for Crunchyroll",
+  title: "Concept Labs Pitch",
+  applicationName: "Concept Labs Pitch",
   description:
-    "An interactive cover letter for Crunchyroll's Concepts Lab, built as a Next.js prototype with anime-inspired design.",
-  openGraph: {
-    title: "Thushar Sreenivas | Cover Letter for Crunchyroll",
-    description:
-      "An interactive cover letter for Crunchyroll's Concepts Lab — Senior Software Engineer",
-    type: "website",
+    "Private application experience shared directly for review.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  robots: {
+    index: false,
+    follow: false,
+    noarchive: true,
+    nosnippet: true,
+    noimageindex: true,
+    nocache: true,
+    "max-image-preview": "none",
+    "max-snippet": 0,
+    "max-video-preview": 0,
+    googleBot: {
+      index: false,
+      follow: false,
+      noarchive: true,
+      nosnippet: true,
+      noimageindex: true,
+      nocache: true,
+      "max-image-preview": "none",
+      "max-snippet": 0,
+      "max-video-preview": 0,
+    },
   },
 };
 
