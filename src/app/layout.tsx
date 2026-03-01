@@ -23,15 +23,13 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-title: "Thushar Sreenivas – Concepts Lab Application",
-applicationName: "Senior Software Engineer, Concepts Lab – Thushar Sreenivas",
-description: "Cover letter for Crunchyroll’s Senior Software Engineer, Concepts Lab role.",
+  title: "Thushar Sreenivas – Concepts Lab Application",
+  applicationName: "Senior Software Engineer, Concepts Lab – Thushar Sreenivas",
+  description: "Cover letter for Crunchyroll’s Senior Software Engineer, Concepts Lab role.",
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    icon: [{ url: "/onigiri_12991796.png", sizes: "512x512", type: "image/png" }],
+    shortcut: ["/onigiri_12991796.png"],
+    apple: [{ url: "/onigiri_12991796.png", sizes: "512x512", type: "image/png" }],
   },
   robots: {
     index: false,
