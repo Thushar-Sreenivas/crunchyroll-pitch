@@ -85,21 +85,21 @@ export const STATS = [
   {
     title: "ZERO TO PROTOTYPE",
     description:
-      "I build things from nothing to something. The Concepts Lab needs someone who can take an idea from zero to validated prototype quickly and think about production from the start.",
+      "Crunchyroll’s Concept Lab needs someone who can turn ideas into validated prototypes quickly, without losing sight of production scale. That’s how I build. I thrive in zero-to-one environments, moving fast while designing with real-world deployment in mind from day one.",
   },
   {
-    title: "TECHNICAL RANGE",
+    title: "Cross-Stack Delivery",
     description:
-      "Canvas editor systems, video players, backend services in Golang, CI/CD pipelines, and AI tooling. Not a specialist — a generalist who goes deep when needed.",
+      "Built React Native video players, AI Canvas editors, Golang backend services, and CI/CD pipelines, picking up whatever the product needed, regardless of stack.",
   },
   {
     title: "AI WORKFLOWS",
     description:
-      "Building AI agent workflows where product teams define context and agents generate pull requests. LLM-powered systems that actually ship to production.",
+      "Building AI agent workflows where product teams define context and agents generate pull requests. LLM-powered systems that compresses the loop from idea to shippable code.",
   },
   {
-    title: "TEAM MULTIPLIER",
+    title: "Team Velocity Systems",
     description:
-      "Introduced git worktrees for parallel feature streams. Built developer productivity systems. The instinct to validate quickly, build internal tools that compound.",
+      "Introduced git worktrees for parallel feature streams and built developer productivity tooling that compounds team output over time.",
   },
 ];

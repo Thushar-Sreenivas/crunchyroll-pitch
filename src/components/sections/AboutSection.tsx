@@ -33,7 +33,7 @@ export default function AboutSection() {
               fontWeight: 400,
             }}
           >
-            About Me
+            
           </h2>
           <div className="section-divider" />
         </motion.div>

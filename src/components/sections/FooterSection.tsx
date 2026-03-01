@@ -50,7 +50,7 @@ export default function FooterSection() {
             ease: [0.16, 1, 0.3, 1],
           }}
           style={{
-            width: 80,
+            width: 100,
             height: 2,
             background: "var(--cr-orange)",
             marginBottom: 32,
@@ -70,16 +70,19 @@ export default function FooterSection() {
           }}
           style={{
             fontSize: "clamp(2rem, 5vw, 4rem)",
-            letterSpacing: "0.05em",
+            // letterSpacing: "0.05em",
             textTransform: "uppercase",
             fontWeight: 400,
             lineHeight: 1.1,
             marginBottom: 48,
+            maxWidth: 900, // Increased from original (container maxWidth is 720)
+            width: "100%",
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
-          Let&apos;s Build Something
-          <br />
-          Together
+          &ldquo; I&apos;d welcome the chance to prototype, validate, and ship
+          for a product I already love. &rdquo;
         </motion.h2>
 
         {/* CTA buttons */}
@@ -101,7 +104,7 @@ export default function FooterSection() {
           }}
         >
           <a href="mailto:thusharsreenivas@gmail.com" className="cta-primary">
-            Contact Me
+            Resume
           </a>
           <a
             href="https://linkedin.com/in/thusharsreenivas"
