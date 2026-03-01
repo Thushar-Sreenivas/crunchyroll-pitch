@@ -23,10 +23,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Concept Labs Pitch",
-  applicationName: "Concept Labs Pitch",
-  description:
-    "Private application experience shared directly for review.",
+title: "Thushar Sreenivas – Concepts Lab Application",
+applicationName: "Senior Software Engineer, Concepts Lab – Thushar Sreenivas",
+description: "Cover letter for Crunchyroll’s Senior Software Engineer, Concepts Lab role.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
