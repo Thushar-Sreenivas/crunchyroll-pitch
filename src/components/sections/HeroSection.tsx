@@ -7,7 +7,11 @@ export default function HeroSection() {
   const name = "THUSHAR SREENIVAS";
 
   return (
-    <section id="hero" className="episode-section" style={{ background: "var(--cr-black)" }}>
+    <section
+      id="hero"
+      className="episode-section"
+      style={{ background: "var(--cr-black)" }}
+    >
       {/* Corner accents */}
       <div className="corner-accent corner-accent--top-left" />
       <div className="corner-accent corner-accent--top-right" />
@@ -122,7 +126,7 @@ export default function HeroSection() {
             marginTop: 8,
           }}
         >
-          Application for Concepts Lab
+          Application for Concepts Lab, Crunchyroll
         </motion.div>
 
         {/* Contact row */}

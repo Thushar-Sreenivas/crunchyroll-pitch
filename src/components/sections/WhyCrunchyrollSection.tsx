@@ -22,7 +22,14 @@ export default function WhyCrunchyrollSection() {
       <EpisodeBadge number="03" />
       <KanjiWatermark kanji="情熱" position="center" />
 
-      <div style={{ maxWidth: 680, width: "100%", paddingTop: 60, paddingBottom: 60 }}>
+      <div
+        style={{
+          maxWidth: 680,
+          width: "100%",
+          paddingTop: 60,
+          paddingBottom: 60,
+        }}
+      >
         {/* Section title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -77,22 +84,25 @@ export default function WhyCrunchyrollSection() {
           }}
         >
           <p style={{ marginBottom: 24 }}>
-            My wife introduced me to anime years ago, and Crunchyroll has been
-            part of our evenings together ever since. I&apos;ve visited Japan twice to
-            see the villages and countryside that inspired the stories we grew up
-            watching — from{" "}
-            <span className="anime-highlight">Death Note</span> to{" "}
+            My wife introduced me to anime years ago, starting with{" "}
+            <span className="anime-highlight">Death Note</span> and{" "}
+            <span className="anime-highlight">Naruto</span>, and it became the
+            thing we bonded over before anything else. These days we're watching{" "}
+            <span className="anime-highlight">Frieren</span> and{" "}
             <span className="anime-highlight">
               That Time I Got Reincarnated as a Slime
-            </span>
-            . This isn&apos;t a casual interest for me.
+            </span>{" "}
+            most evenings on Crunchyroll. I've visited Japan twice because of
+            how much these stories shaped the way I see the world, and
+            Crunchyroll is the platform that made all of that accessible. What
+            they've built for anime fans globally, the catalog, the simulcasts,
+            the community, is something I genuinely admire.
           </p>
           <p>
-            The Concepts Lab role stood out because applied research and rapid
-            prototyping is the work I&apos;m most drawn to. I&apos;ve spent the last few
-            years building proof of concepts that actually ship, and the chance
-            to do that for a product I already use and a community I belong to is
-            not something I can walk past.
+            This isn't a casual interest. The Concepts Lab role stood out
+            because applied research and rapid prototyping is the work I'm most
+            drawn to, and the chance to do that for a product I already use and
+            a community I belong to is not something I can walk past.
           </p>
         </motion.div>
       </div>
