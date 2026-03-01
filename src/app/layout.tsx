@@ -23,14 +23,10 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Thushar Sreenivas – Concepts Lab Application",
+  title: "Thushar – Concepts Lab Cover Letter",
   applicationName: "Senior Software Engineer, Concepts Lab – Thushar Sreenivas",
-  description: "Cover letter for Crunchyroll’s Senior Software Engineer, Concepts Lab role.",
-  icons: {
-    icon: [{ url: "/onigiri_12991796.png", sizes: "512x512", type: "image/png" }],
-    shortcut: ["/onigiri_12991796.png"],
-    apple: [{ url: "/onigiri_12991796.png", sizes: "512x512", type: "image/png" }],
-  },
+  description:
+    "Cover letter for Crunchyroll’s Senior Software Engineer, Concepts Lab role.",
   robots: {
     index: false,
     follow: false,
